@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ashkenazi1/requester"
+	"github.com/ashkenazi1/go_requester"
 )
 
 func main() {
 	//Get Request
-	r := requester.New()
+	r := go_requester.New()
 	resp, err := r.Get("https://www.example.com")
 	if err != nil {
 		fmt.Println("Error:", err)
